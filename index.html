@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>模拟扫雷</title>
+</head>
+<link href="https://fonts.lug.ustc.edu.cn/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/base.min.css" />
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="js/knockout-2.2.1.js" type="text/javascript"></script>
+<script src="js/sevenSeg.js" type="text/javascript"></script>
+
+<body>
+	<h1>扫雷</h1>
+	<!--游戏设置-->
+	<nav>
+		<ul class="main">
+			<li>
+				<a href="#">游戏</a>
+				<ul class="drop menu1">
+					<li>
+						<!-- （10个雷，9*9的平铺网格） -->
+						<a href="javascript:void(0);" onclick="initSet(0)">初级</a>
+					</li>
+					<li>
+						<!-- （40个雷，16*16的平铺网格） -->
+						<a href="javascript:void(0);" onclick="initSet(1)">中级</a>
+					</li>
+					<li>
+						<!-- （99个雷，30*16的平铺网格） -->
+						<a href="javascript:void(0);" onclick="initSet(2)">高级</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">帮助</a>
+				<ul class="drop menu2">
+					<li>
+						<a href="#">使用帮助</a>
+					</li>
+					<li>
+						<a href="#">关于扫雷</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+	<!--游戏设置结束-->
+
+	<!--游戏布局-->
+	<div id="game" class="game" align="center"></div>
+	<!--游戏布局结束-->
+
+	<!--显示有雷的格子的id-->
+	<div id="test" class="test"></div>
+	<!--显示有雷的格子的id-->
+
+	<!--计时与标记数的计算-->
+	<div id="mine_left" class="count" style="left:590px; top:140px"></div>
+	<div id="time_seconds" class="count" style="left:740px; top:140px"></div>
+	<!--计时与标记数的计算-->
+
+	<!--成功失败的提示-->
+	<!--成功失败的提示-->
+
+	<script type="text/javascript" src="js/tool.min.js"></script>
+</body>
+
+</html>
